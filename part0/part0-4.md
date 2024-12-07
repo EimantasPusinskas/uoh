@@ -1,6 +1,6 @@
 # Sequence Diagram for Part 0.4
 
-"""mermaid
+```mermaid
 sequenceDiagram
     participant browser
     participant server
@@ -10,4 +10,4 @@ sequenceDiagram
     server->>browser: HTTP status 302
     deactivate server   
 
-"""
+```
