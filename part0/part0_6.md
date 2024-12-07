@@ -8,6 +8,7 @@ sequenceDiagram
     activate server
     server->>browser: {"message": "note created"}
     deactivate server
+    Note right of browser: Javascript pushes changes to the displayed web page
 
 
     
