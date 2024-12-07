@@ -8,11 +8,13 @@ sequenceDiagram
     Note right of browser: Users submits form
     browser->>server: POST https://studies.cs.helsinki.fi/exampleapp/new_note
     activate server
-
     server->>browser: HTTP status 302
     deactivate server
+
+    Note right of browser: Browser performs new GET request 
     browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/notes
     activate server
+    Note left of server: Server reloads the notes page
     server-->>browser: HTML document
     deactivate server
 
